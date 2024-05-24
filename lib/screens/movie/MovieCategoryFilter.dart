@@ -23,7 +23,7 @@ class _MovieCategoryState extends State<MovieDetails> {
   List<MovieModel> movieFilterlist = [];
   @override
   void initState() {
-    loadMovieCategory(widget.movieCat.toString());
+    //loadMovieCategory(widget.movieCat.toString());
   }
 
   Future<void> loadMovieCategory(String id) async {
@@ -46,7 +46,7 @@ class _MovieCategoryState extends State<MovieDetails> {
   @override
   Widget build(BuildContext context) {
     final movie = Provider.of<MovieProvider>(context, listen: false)
-        .getMovieById(widget.movieCat);
+        //.getMovieById(widget.movieCat);
 
     return Scaffold(
         appBar: AppBar(
